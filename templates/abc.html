@@ -1,0 +1,304 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DEHAZER</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="static/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="static/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="static/css/normalize.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="static/css/flexslider.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/queries.css">
+    <link rel="stylesheet" href="static/css/etline-font.css">
+    <link rel="stylesheet" href="static/bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#"><img src="static/img/asd.png" alt="Sedna logo"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="#features">Introduction</a></li>
+                                <li><a href="#assets">Services</a></li>
+                                <li><a href="#blog">Results</a></li>
+                                <li><a href="#download">Team</a></li>
+                            </ul>
+                            <ul class="member-actions">
+                                <li><a href="https://github.com/therrshan" class="login">Source Code</a></li>
+                                <li><a href="https://github.com/therrshan" class="btn-white btn-small">Github</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <h1>Dehazer, Fog Removal!</h1>
+                        <p class="intro">Online system to remove haze and fog from any image.</p>
+                        <a href="#assets" class="btn btn-fill btn-large btn-margin-right">Try it</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+    </section>
+    <section class="intro section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe033;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Wide Range</h5>
+                        <p>Trained on over 25 thousand real life images, our model gives accurate result on a wide variety of scenic images of even low quality cameras.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe030;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Accurate Results</h5>
+                        <p>With industry standard accurately trained models, the fog and haze removal gives  close to accurate results.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe046;" class="icon"></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Open Source</h5>
+                        <p>Developed academically the source code for the project and all the models involved are uploaded on the github links attached in the about section.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features section-padding" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="static/img/a.png" width="100%">
+
+                </div>
+                
+                <div class="col-md-offset-7">
+                    
+                    <div class="feature-list">
+                        <h3>Fog Removal using Transmission Maps</h3>
+                        <p>The project involves three main steps for development and deployment</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03e;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Depth/Transmission Map</h5>
+                                    <p>Depth maps are produced by a custom model using atrous convolutions.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe040;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Haze Removal</h5>
+                                    <p>The transmission maps are processed using the atmospheric light filtering using existing network.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03c;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Deploy Application</h5>
+                                    <p>Deploy the trained network as a web application for the public use.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features-extra section-padding" id="assets">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <h3>Fog Removal!</h3>
+                        <p>Just upload a single image with fog/haze in it and watch as the system gives you the dehazed image. Quality of the image will be unhindered </p>
+                        <p>The system will show you a comparision between the  uploaded version of the image and the processed image. If you are happy with the results, you can download the image from the buttons provided.
+                        </p>
+                        <a href="/predict" class="btn btn-ghost btn-accent btn-small">Remove Fog</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <h3>Depth Map!</h3>
+                        <p>We use a custom depth prediction algorithm with atrous convolutions to generate the trasmission maps for removing the fog/haze.</p>
+                        <p>The depth prediction model gives astonishing results as compared to the industry standards and to try it on any image, use the following service to upload your image and get a depth map of your image.
+                        </p>
+                        <a href="#" class="btn btn-ghost btn-accent btn-small">Depth Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="blog text-center" id="blog">
+        <div class="container-fluid">
+            <h1>Results</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="static/img/man.png" class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="static/img/man.png"/>
+                                </div>
+                            </a>
+                            <figcaption>
+                            <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">Fog Removal Result</a></h2>
+                            <p><a href="#" class="blog-post-title">Fog removed from a picture with humans <i class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="static/img/test2.jpg" class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="static/img/test2.jpg" class="single_image" alt="Sedna blog image"/>
+                                </div>
+                            </a>
+                        
+                            <figcaption>
+                            <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">Fog Removal Result</a></h2>
+                            <p><a href="#" class="blog-post-title">Fog removed from an image of a forest. <i class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="static/img/test13.jpg" class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="static/img/test13.jpg"/>
+                                </div>
+                            </a>
+                            <figcaption>
+                            <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">Haze Removal Result</a></h2>
+                            <p><a href="#" class="blog-post-title">Haze removed from the background of the image <i class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <a href="/gallery" class="btn btn-ghost btn-accent btn-small">More Results</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonial-slider section-padding text-center" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Meet the team members!</h2>
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="avatar"><img src="static/img/darshan.jpeg" alt="Sedna Testimonial Avatar"></div>
+                                <h2>"Darshan Rajopadhye"</h2>
+                                <p class="author">B. E. Computer</p>
+                            </li>
+                            <li>
+                                <div class="avatar"><img src="static/img/pravin.jpeg" alt="Sedna Testimonial Avatar"></div>
+                                <h2>"Pravin Shelke"</h2>
+                                <p class="author">B. E. Computer</p>
+                            </li>
+                            <li>
+                                <div class="avatar"><img src="static/img/apoorva.jpeg" alt="Sedna Testimonial Avatar"></div>
+                                <h2>"Apoorva Dhalpawar"</h2>
+                                <p class="author">B. E. Computer</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="to-top">
+        <div class="container">
+            <div class="row">
+                <div class="to-top-wrap">
+                    <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="static/bower_components/retina.js/dist/retina.js"></script>
+    <script src="static/js/jquery.fancybox.pack.js"></script>
+    <script src="static/js/vendor/bootstrap.min.js"></script>
+    <script src="static/js/scripts.js"></script>
+    <script src="static/js/jquery.flexslider-min.js"></script>
+    <script src="static/bower_components/classie/classie.js"></script>
+    <script src="static/bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>
