@@ -1,0 +1,19 @@
+@startuml sequence
+
+actor       user       as Foo1
+participant    webapp    as Foo2
+participant     FlaskApi     as Foo3
+participant      model      as Foo4
+
+
+Foo1 -> Foo2 : Visit
+Foo1 -> Foo2 : Upload Image
+Foo2 -> Foo3 : Pass Image
+Foo2 -> Foo3 : Request Service
+Foo3 -> Foo4 : Pass Image
+Foo4 -> Foo4 : Process
+Foo4 -> Foo3 : Processed Image
+Foo3 -> Foo2 : Pass Image
+Foo2 -> Foo1 : Display Processed Image
+
+@enduml

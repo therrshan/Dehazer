@@ -1,0 +1,41 @@
+@startuml classDiagram
+skinparam classAttributeIconSize 0
+
+class Predict {
+ +image_path
+ +service
+ +new_image
+ ~get_image()
+ ~get_service()
+}
+
+class UI {
+ +image_path
+ +service
+ +new_image
+ ~get_image()
+ ~get_service()
+ ~display_image()
+
+}
+abstract FogRemoval {
+ +image_path
+ +model_path
+ ~get_image()
+ ~get_model()
+ ~predict()
+}
+abstract DepthPredict {
+ +image_path
+ +model_path
+ ~get_image()
+ ~get_model()
+ ~predict()
+}
+
+Predict <|-- FogRemoval
+Predict <|-- DepthPredict
+
+UI -> Predict : POST
+Predict -> UI : GET
+@enduml

@@ -1,0 +1,21 @@
+@startuml usecase
+left to right direction
+skinparam actorStyle awesome
+actor User as g
+package BackEnd {
+  actor FlaskApi as c
+  actor Model as m
+}
+package FrontEnd {
+  usecase "Upload Image" as UC1
+  usecase "Download Image" as UC2
+  usecase "Retrieve Image" as UC4
+  usecase "Display Processed Image" as UC3
+}
+UC4 --> c
+g --> UC1
+c --> UC3
+g --> UC2
+c --> m
+m --> c
+@enduml

@@ -1,0 +1,16 @@
+@startuml component
+skinparam componentStyle uml1
+
+interface user as u
+interface HTTP as h
+
+
+
+u -right-> [Upload]
+u <-left- [Download]
+[Upload] ..> h : GET
+[Download] <.. h : POST
+h .right.> [FlaskApp]
+[FlaskApp] <-right-> [Model]
+
+@enduml

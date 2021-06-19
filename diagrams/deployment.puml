@@ -1,0 +1,42 @@
+@startuml deployment
+skinparam actorStyle awesome
+package FlaskAPP as fp{
+    artifact app.py{
+        frame Libraries
+        frame Method as a
+        frame RenderWebPage as b
+        frame UploadForm as c
+        artifact Routes{
+            frame ReadImage as e
+            frame sendImage as f
+            frame getImage as g
+            frame displayImage as h
+
+        }
+    }
+    artifact Models as d{
+        frame DepthModel as dm
+        frame FogModel as fm
+    }
+}
+actor client as cl
+cloud Internet as it
+node UI as u
+
+
+
+a --> b : GET
+a --> e : POST
+b --> c 
+f --> d
+d --> g
+g --> h
+h --> c
+u --> fp :Request
+cl -right->it
+it -right-> u
+
+
+
+
+@enduml
