@@ -1,0 +1,21 @@
+@startuml activity
+
+start
+  :Start App; 
+  :Navigate to Service;
+  :Upload Image; 
+
+if (Service?) then (Depth)
+  #palegreen:Predict Depth;
+  #palegreen:Display Depth Map;
+
+else (Fog Removal)
+  #palegreen:Predict Depth;
+  #palegreen:Pass to Fog Removal Algorithm;
+  #palegreen:Display Clear Image;
+  
+endif
+
+stop
+
+@enduml
