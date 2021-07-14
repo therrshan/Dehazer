@@ -19,5 +19,9 @@ The project directory consists of the models and their files in the respective f
 ```shell
 python3 app.py or flask run
 ```
+### The UI of the application
 
+![](./diagrams/Landing.png)
+![](./diagrams/form_a.png)
+![](./diagrams/form_b.png)
 
