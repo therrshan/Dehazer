@@ -1,0 +1,3 @@
+# .gitignore
+flaskApp
+__pycache__
